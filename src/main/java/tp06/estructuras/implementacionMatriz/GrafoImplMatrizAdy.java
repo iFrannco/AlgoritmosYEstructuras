@@ -44,7 +44,7 @@ public class GrafoImplMatrizAdy<T> implements Grafo<T> {
         if (this.vertices.incluye(origen) && this.vertices.incluye(destino)) {
             matrizAdy[origen.getPosicion()][destino.getPosicion()] = 1;
             // si es no dirigido, descomentar lo de abajo.
-            matrizAdy[destino.getPosicion()][origen.getPosicion()] = 1;
+            //matrizAdy[destino.getPosicion()][origen.getPosicion()] = 1;
         }
     }
 
@@ -53,7 +53,7 @@ public class GrafoImplMatrizAdy<T> implements Grafo<T> {
         if (this.vertices.incluye(origen) && this.vertices.incluye(destino)) {
             matrizAdy[origen.getPosicion()][destino.getPosicion()] = peso;
             // si es no dirigido, descomentar lo de abajo.
-            matrizAdy[destino.getPosicion()][origen.getPosicion()] = peso;
+            //matrizAdy[destino.getPosicion()][origen.getPosicion()] = peso;
         }
     }
 
